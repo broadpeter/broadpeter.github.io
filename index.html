@@ -3,37 +3,108 @@
   https://www.codeguage.com/tutorials/lazy-loading/ -->
 
 
-  <!DOCTYPE html>
-  <html>
-  <head>
-    
-      <meta charset="utf-8" />
-      <title>Split to Sarajevo</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-      <meta property="og:type"               content="article" />
-      <meta property="og:title"              content="Split to Sarajevo" />
-      <meta property="og:description"        content="My photos from a cycle trip" />
-      <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-  
-  
-  <style> 
+<!DOCTYPE html>
+<html>
 
-html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video, radio {
+<head>
+
+  <meta charset="utf-8" />
+  <title>Split to Sarajevo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta property="og:url"
+    content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Split to Sarajevo" />
+  <meta property="og:description" content="My photos from a cycle trip" />
+  <meta property="og:image"
+    content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+
+  <style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video,
+    radio {
       margin: 0;
       padding: 0;
       border: 0;
@@ -42,11 +113,11 @@ html, body, div, span, applet, object, iframe,
       vertical-align: baseline;
     }
 
-/* lazy wrapper
+    /* lazy wrapper
 
 
 style="display: inline-block;width: 100%;max-width: 640px" */
-        /* body {padding-bottom: 200px}
+    /* body {padding-bottom: 200px}
   .lazy-div {
       /* background-color: #fff;
       display: inline-block;
@@ -55,7 +126,7 @@ style="display: inline-block;width: 100%;max-width: 640px" */
      width: 100%;
   } 
   */
-   /* .responsive {
+    /* .responsive {
   position: absolute; 
       max-width: 100%;
       height: auto;
@@ -64,54 +135,61 @@ style="display: inline-block;width: 100%;max-width: 640px" */
       margin: 15px 15px 15px 15px;
       transition: 1s linear;
   } */
-  /* .lazy-div .unloaded {
+    /* .lazy-div .unloaded {
      opacity: 0;
      visibility: hidden;
   } */
 
-  .text-div{display:block;}
-  .landscape {
-    width: 100%;
-  max-width:800px ;
-  height: auto;
-  padding:30px 3% 30px 3%;
-  box-sizing: border-box;
-margin:auto;
-}
+    .text-div {
+      display: block;
+    }
 
-.portrait {
-  width: 70%;
-  max-width: 450px;
-  height: auto;
-  padding:15px 15% 15px 15%; 
-  /* box-sizing: border-box; */
-margin:auto;
+    .landscape {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      padding: 30px 3% 30px 3%;
+      box-sizing: border-box;
+      margin: auto;
+    }
 
-}
-.column {
-  float: left;
-  margin:auto
-}
+    .portrait {
+      width: 70%;
+      max-width: 450px;
+      height: auto;
+      padding: 15px 15% 15px 15%;
+      /* box-sizing: border-box; */
+      margin: auto;
 
-.row::after {
-  margin:auto
-}
+    }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  margin:auto
-}
+    .column {
+      float: left;
+      margin: auto
+    }
+
+    .row::after {
+      margin: auto
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      margin: auto
+    }
 
 
-.image{
-    display:block;
-    
-} 
+    .image {
+      display: block;
+    }
 
-/* .div1{
+    .text-div {
+      display: none;
+    }
+
+    /* .div1{
 
     overflow: scroll;
   height: 100vh;
@@ -119,7 +197,7 @@ margin:auto;
 } */
 
 
-/* .image{
+    /* .image{
     
      scroll-snap-align: start;
 } 
@@ -128,7 +206,7 @@ margin:auto;
 
 
 
-/*
+    /*
 For horiztontal scroll
 
 .image{
@@ -142,165 +220,669 @@ For horiztontal scroll
     height: 100vh;
     white-space:nowrap;
 } */
-      </style>
-  </head>
+  </style>
+</head>
 
 <body>
 
-<div class ="full-wrapper">
+  <div class="full-wrapper">
     <!-- <div class="div1"> -->
- <div class ="text-div">Split</div>
-        <img src="images/0003.png" class="image">
- <img src="images/0004.png" class="image">
- <img src="images/0006.png" class="image">
-
- <img src="images/0005.png" class="image">
- <img src="images/0007.png" class="image">
- <img src="images/0008.png" class="image">
-  <img src="images/0009.png" class="image">
-  <img src="images/0010.png" class="image">
- <img src="images/0011.png" class="image">
- <img src="images/0013.png" class="image">
- 
- <img src="images/0012.png" class="image">
-  <img src="images/0014.png" class="image">
- 
-  <img src="images/0015.png" class="image">
- <img src="images/0016.png" class="image">
- <img src="images/0017.png" class="image">
- <img src="images/0018.png" class="image">
-  <img src="images/0019.png" class="image">
- 
-  <img src="images/0020.png" class="image">
- <img src="images/0021.png" class="image">
- <img src="images/0022.png" class="image">
- <img src="images/0023.png" class="image">
-  <img src="images/0024.png" class="image">
- 
-  <img src="images/0025.png" class="image">
- <img src="images/0026.png" class="image">
- <img src="images/0027.png" class="image">
- <img src="images/0028.png" class="image">
-  <img src="images/0029.png" class="image">
- 
-  <img src="images/0030.png" class="image">
- <img src="images/0031.png" class="image">
- <img src="images/0032.png" class="image">
- <img src="images/0033.png" class="image">
-  <img src="images/0034.png" class="image">
- 
-  <img src="images/0035.png" class="image">
- <img src="images/0036.png" class="image">
- <img src="images/0037.png" class="image">
- <img src="images/0038.png" class="image">
-  <img src="images/0039.png" class="image">
- 
-  <img src="images/0040.png" class="image">
- <img src="images/0041.png" class="image">
- <img src="images/0042.png" class="image">
- <img src="images/0043.png" class="image">
-  <img src="images/0044.png" class="image">
- 
-  <img src="images/0045.png" class="image">
- <img src="images/0046.png" class="image">
- <img src="images/0047.png" class="image">
- <img src="images/0048.png" class="image">
-  <img src="images/0049.png" class="image">
- 
-  <img src="images/0050.png" class="image">
- <img src="images/0051.png" class="image">
- <img src="images/0052.png" class="image">
- <img src="images/0053.png" class="image">
-  <img src="images/0054.png" class="image">
- 
-  <img src="images/0055.png" class="image">
- <img src="images/0056.png" class="image">
- <img src="images/0057.png" class="image">
- <img src="images/0058.png" class="image">
-  <img src="images/0059.png" class="image">
- 
-  <img src="images/0060.png" class="image">
- <img src="images/0061.png" class="image">
- <img src="images/0062.png" class="image">
- <img src="images/0063.png" class="image">
-  <img src="images/0064.png" class="image">
- 
-  <img src="images/0065.png" class="image">
- <img src="images/0066.png" class="image">
- <img src="images/0067.png" class="image">
- <img src="images/0068.png" class="image">
-  <img src="images/0069.png" class="image">
- 
-  <img src="images/0070.png" class="image">
- 
-  <img src="images/0072.png" class="image">
- 
-  <img src="images/0071.png" class="image">
-  <img src="images/0073.png" class="image">
- 
-  <img src="images/0002.png" class="image">
-  <img src="images/0001.png" class="image">
-  
- 
-  <img src="images/0074.png" class="image">
- 
-  <img src="images/0075.png" class="image">
- <img src="images/0076.png" class="image">
- <div class ="row">
-    <div class = "column">
-    <img src="images/0077.png" class="image"></div>
-    <div class="column">
- <img src="images/0078.png" class="image">
-    </div>
-</div>
-    
- <img src="images/0079.png" class="image">
- 
-  <img src="images/0080.png" class="image">
- <img src="images/0081.png" class="image">
- <img src="images/0082.png" class="image">
- <img src="images/0083.png" class="image">
-  <img src="images/0084.png" class="image">
- 
-  <img src="images/0085.png" class="image">
- <img src="images/0086.png" class="image">
- <img src="images/0087.png" class="image">
- <img src="images/0088.png" class="image">
- 
- 
-     <!-- </div> -->
-    <!-- <img class="responsive" src="images/summer20201260.jpg">
-    <img class="responsive" src="images/summer20201260.jpg">
-    <img class="responsive" src="images/summer20201260.jpg">
-    <img class="responsive" src="images/summer20201260.jpg"> -->
-    <!-- data-src used instead of src as src would load image immediately. Data-src only gets URL initially -->
-  <!-- <div class="lazy-wrapper" >
-      <div class="lazy-div" > 
-        <img class="responsive" src="images/summer20201260.jpg">
+    <div class="text-div">Split</div>
+    <div class="parent-div">
+      <div class="image-div">
+        <img src="images/0003.png" class="image portrait" loading:lazy>
       </div>
-  </div>
-  <div class="lazy-wrapper" >
-    <div class="lazy-div" >
-      <img class="responsive" src="images/summer20201261.jpg">
     </div>
-  </div>
-  <div class="lazy-wrapper" >
-    <div class="lazy-div" > 
-      <img class="responsive" src="images/summer20201260.jpg">
+
+
+    <div class="parent-div">
+      <div class="image-div">
+        <img src="images/0004.png" class="image landscape" loading:lazy>
+      </div>
     </div>
-  </div>
-  <div class="lazy-wrapper" >
-  <div class="lazy-div" >
-    <img class="responsive" src="images/summer20201261.jpg">
-  </div>
-  </div> -->
-</div>
-  
+
+
+
+    <div class="parent-div">
+      <div class="image-div">
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0006.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0005.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0007.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0008.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0009.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0010.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0011.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0013.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0012.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0014.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0015.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0016.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0017.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0018.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0019.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0020.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0021.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0022.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0023.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0024.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0025.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0026.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0027.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0028.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0029.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0030.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0031.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0032.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0033.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0034.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0035.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0036.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0037.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0038.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0039.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0040.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0041.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0042.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0043.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0044.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0045.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0046.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0047.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0048.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0049.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0050.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0051.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0052.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0053.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0056.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0054.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0055.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0057.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0058.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0059.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0060.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0061.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0062.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0063.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0064.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0065.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0066.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0067.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0068.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0069.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0070.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0072.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0071.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0073.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0002.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0001.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0074.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0075.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0076.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <!-- <div class="row">
+          <div class="column"> -->
+            <div class="parent-div">
+              <div class="image-div">
+                <img src="images/0077.png" class="image portrait" loading:lazy>
+              </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="column"> -->
+            <div class="parent-div">
+              <div class="image-div">
+                <img src="images/0078.png" class="image portrait" loading:lazy>
+              </div>
+            </div>
+          <!-- </div>
+        </div> -->
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0079.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0080.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0081.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0082.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0083.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0084.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0085.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0086.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0087.png" class="image landscape" loading:lazy>
+          </div>
+        </div>
+
+
+        <div class="parent-div">
+          <div class="image-div">
+            <img src="images/0088.png" class="image portrait" loading:lazy>
+          </div>
+        </div>
+
+      </div>
 </body>
 
 
-  <script>
-    $('.image').each(function(){
+<!-- adds class based on image dimensions
+   <script>
+  $('.image').each(function () {
     $(this).addClass(this.width > this.height ? 'image landscape' : 'image portrait');
-});
-</script>
+  });
+</script> -->
