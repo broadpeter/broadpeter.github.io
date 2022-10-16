@@ -1,0 +1,225 @@
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video,
+    radio {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* lazy wrapper
+
+
+style="display: inline-block;width: 100%;max-width: 640px" */
+    /* body {padding-bottom: 200px}
+  .lazy-div {
+      /* background-color: #fff;
+      display: inline-block;
+      position: relative;
+      border:none;
+     width: 100%;
+  } 
+  */
+    /* .responsive {
+  position: absolute; 
+      max-width: 100%;
+      height: auto;
+      
+      
+      margin: 15px 15px 15px 15px;
+      transition: 1s linear;
+  } */
+    /* .lazy-div .unloaded {
+     opacity: 0;
+     visibility: hidden;
+  } */
+
+  body{font-family: "Inter";
+font-weight:400}
+
+
+
+a{font-family: "Inter Tight";
+  color:black;
+  text-decoration: none; }
+
+
+  a:hover {
+  color: turquoise;
+}
+    .text-div {
+      display: block;
+    }
+
+    .landscape {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      padding: min(30px, 5%) 3% min(30px,5%) 3%;
+      box-sizing: border-box;
+      margin: auto;
+    }
+
+    .portrait {
+      width: 70%;
+      max-width: 450px;
+      height: auto;
+      padding: min(25px, 6%) 15% min(25px, 6%) 15%;
+      /* box-sizing: border-box; */
+      margin: auto;
+
+    }
+
+    .break-div{
+      min-height: 17vh;
+      display: none;
+    }
+
+
+    .column {
+      float: left;
+      margin: auto
+    }
+
+    .row::after {
+      margin: auto
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      margin: auto
+    }
+
+
+    .image {
+      display: block;
+    }
+
+    .text-div {
+      display: none;
+    }
+   .menu{
+        display:block;
+        font-size: 18px;
+        line-height: 26px;
+        margin: auto 0 auto 0;
+        padding: 20px 3% 0 3%;
+        text-align: left;
+        }
+
+    /* .div1{
+
+    overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+} */
+
+
+    /* .image{
+    
+     scroll-snap-align: start;
+} 
+*/
+
+
+
+
+    /*
+For horiztontal scroll
+
+.image{
+    display:inline-block;
+    
+} 
+
+ .full-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100vh;
+    white-space:nowrap;
+} */
