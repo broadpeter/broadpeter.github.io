@@ -176,11 +176,11 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
 
   }
 .symbol-text{
- font-size:    min(calc(10px + ( 15 - 10) * ((100vw - 300px) / (700 - 300))),15px)
+ font-size:    min(calc(15px + ( 15 - 15) * ((100vw - 300px) / (700 - 300))),15px)
 }
 
 .symbol-text-moon{
-  font-size:    min(calc(14px + ( 21 - 14) * ((100vw - 300px) / (700 - 300))),21px)
+  font-size:    min(calc(15px + ( 21 - 15) * ((100vw - 300px) / (700 - 300))),21px)
  }
   .section-break{font-family: "Inter", sans-serif;
     font-style: normal;
