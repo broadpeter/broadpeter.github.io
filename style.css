@@ -1,101 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700&family=Inter:wght@300;400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;700&family=Inter:wght@300;400;700&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+radio {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video,
-    radio {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-
-    /* lazy wrapper
+/* lazy wrapper
 
 
 style="display: inline-block;width: 100%;max-width: 640px" */
-    /* body {padding-bottom: 200px}
+/* body {padding-bottom: 200px}
   .lazy-div {
       /* background-color: #fff;
       display: inline-block;
@@ -104,7 +103,7 @@ style="display: inline-block;width: 100%;max-width: 640px" */
      width: 100%;
   } 
   */
-    /* .responsive {
+/* .responsive {
   position: absolute; 
       max-width: 100%;
       height: auto;
@@ -113,88 +112,184 @@ style="display: inline-block;width: 100%;max-width: 640px" */
       margin: 15px 15px 15px 15px;
       transition: 1s linear;
   } */
-    /* .lazy-div .unloaded {
+/* .lazy-div .unloaded {
      opacity: 0;
      visibility: hidden;
   } */
 
-  body{font-family: "Inter";
-font-weight:400}
+
+text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  /* transition: 0.3s; */
+}
 
 
+/* Hyperlinks */
 
-a{font-family: "Inter Tight";
+a {
   color:black;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.3s;
+    letter-spacing: -0.06em;
+}
 
-
-  a:hover {
+a:hover {
   color: turquoise;
 }
-    .text-div {
-      display: block;
+
+.text-div {
+  display: block;
+}
+
+
+
+.page-title{ font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: min(calc(36px + (51 - 36) * ((100vw - 300px) / (700 - 300))),51px);
+
+  line-height: 224.52%;
+  /* or 125px */
+    text-align: center;
+  letter-spacing: -0.06em;
+padding-top: min(calc(31px + (44 - 31) * ((100vw - 300px) / (700 - 300))),44px);
+padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41px);
+}
+
+.symbol-div{
+  padding-bottom:    min(calc(7px + (10 - 7) * ((100vw - 300px) / (700 - 300))),7px);
+ 
+  ;}
+  .menu-div{
+    font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+    font-size: min(calc(36px + (51 - 36) * ((100vw - 300px) / (700 - 300))),51px);
+
+    height: 100vh;
+    padding: 10px;
+    /* border: 3px dashed #1c87c9; */
+
+    display: table-cell;
+    vertical-align: middle;
+
+  }
+.symbol-text{
+ font-size:    min(calc(10px + ( 15 - 10) * ((100vw - 300px) / (700 - 300))),15px)
+}
+
+.symbol-text-moon{
+  font-size:    min(calc(14px + ( 21 - 14) * ((100vw - 300px) / (700 - 300))),21px)
+ }
+  .section-break{font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight:300;
+    /* font-size: 21px; */
+    text-align: center;
+    line-height: 120.02%;
+    padding-top: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+    padding-bottom:  min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+
+      font-size: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+
+    /* or 62px */
+    
     }
 
-    .landscape {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      padding: min(30px, 5%) 3% min(30px,5%) 3%;
-      box-sizing: border-box;
-      margin: auto;
+  .section-title{font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight:300;
+    /* font-size: 21px; */
+    text-align: center;
+    line-height: 120.02%;
+  padding-top: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+
+      font-size: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+
+    /* or 62px */
+    
     }
+.landscape {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding: min(30px, 5%) 1.5% min(30px, 5%) 1.5%;
+  box-sizing: border-box;
+  margin: auto;
+}
 
-    .portrait {
-      width: 70%;
-      max-width: 450px;
-      height: auto;
-      padding: min(25px, 6%) 15% min(25px, 6%) 15%;
-      /* box-sizing: border-box; */
-      margin: auto;
+.portrait {
+  width: 84%;
+  max-width: 450px;
+  height: auto;
+  padding: min(25px, 6%) 8% min(25px, 6%) 8%;
+  /* box-sizing: border-box; */
+  margin: auto;
 
-    }
+}
 
-    .break-div{
-      min-height: 17vh;
-      display: none;
-    }
-
-
-    .column {
-      float: left;
-      margin: auto
-    }
-
-    .row::after {
-      margin: auto
-    }
-
-    /* Clear floats after image containers */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-      margin: auto
-    }
+.break-div {
+  min-height: 17vh;
+  display: none;
+}
 
 
-    .image {
-      display: block;
-    }
+.column {
+  float: left;
+  margin: auto
+}
 
-    .text-div {
-      display: none;
-    }
-   .menu{
-        display:block;
-        font-size: 18px;
-        line-height: 26px;
-        margin: auto 0 auto 0;
-        padding: 20px 3% 0 3%;
-        text-align: left;
-        }
+.row::after {
+  margin: auto
+}
 
-    /* .div1{
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin: auto
+}
+
+
+
+/* .image-div{ */
+  /* display: block;
+ margin: auto 0 auto 0;  */
+/* }  */
+
+.image {
+  display: block;
+  /* margin: auto 0 auto 0;  */
+}
+
+/* .parent-div{
+ min-height: 100vh; 
+ display: block;
+ margin: auto 0 auto 0; 
+}
+
+.text-div {
+  display: none;
+}
+
+.menu {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Inter Tight";
+  margin: auto 0 auto 0;
+  padding: 20px 3% 0 3%;
+  text-align: left;
+}
+
+/* div { border:1px solid green;} */
+
+/* .full-wrapper{
+    height: 100vh;
+ } */
+/* .div1{
 
     overflow: scroll;
   height: 100vh;
@@ -202,7 +297,7 @@ a{font-family: "Inter Tight";
 } */
 
 
-    /* .image{
+/* .image{
     
      scroll-snap-align: start;
 } 
@@ -211,7 +306,7 @@ a{font-family: "Inter Tight";
 
 
 
-    /*
+/*
 For horiztontal scroll
 
 .image{
