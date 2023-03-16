@@ -203,11 +203,11 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
     /* font-size: 21px; */
     text-align: center;
     line-height: 120.02%;
-  padding-top: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+  padding-top: min(calc(35px + (50 - 35) * ((100vw - 300px) / (700 - 300))),50px);
 
-      font-size: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px);
+      font-size: min(calc(16px + (20 - 14) * ((100vw - 300px) / (700 - 300))),20px);
 
-    /* or 62px */
+     /* or 62px */
     
     }
 .landscape {
