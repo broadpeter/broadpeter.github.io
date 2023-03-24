@@ -158,7 +158,7 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
 }
 
 .symbol-div{
-  padding-bottom:    min(calc(7px + (10 - 7) * ((100vw - 300px) / (700 - 300))),7px);
+  padding-bottom:    min(calc(10px + (12 - 10) * ((100vw - 300px) / (700 - 300))),12px);
  
   ;}
   .menu-div{
@@ -176,7 +176,7 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
 
   }
 .symbol-text{
- font-size:    min(calc(15px + ( 15 - 15) * ((100vw - 300px) / (700 - 300))),15px)
+ font-size:    min(calc(14px + ( 14 - 14) * ((100vw - 300px) / (700 - 300))),14px)
 }
 
 .symbol-text-moon{
@@ -197,6 +197,10 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
     
     }
 
+
+
+
+
   .section-title{font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight:300;
@@ -205,11 +209,25 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
     line-height: 120.02%;
   padding-top: min(calc(35px + (50 - 35) * ((100vw - 300px) / (700 - 300))),50px);
 
-      font-size: min(calc(16px + (20 - 14) * ((100vw - 300px) / (700 - 300))),20px);
+      font-size: min(calc(17px + (20 - 17) * ((100vw - 300px) / (700 - 300))),20px);
 
      /* or 62px */
     
     }
+
+
+
+      @media only screen and (max-width: 400px) {
+        #end {
+          padding-bottom:  50px;
+        }
+      }
+/*       
+
+   */
+      /* or 62px */
+      
+
 .landscape {
   width: 100%;
   max-width: 800px;
