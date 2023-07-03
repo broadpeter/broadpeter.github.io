@@ -90,6 +90,16 @@ radio {
   vertical-align: baseline;
 }
 
+html, body{
+height: 100vh;
+background-color: #fefefe;
+/* background-color: #ffffff */
+;
+}
+
+
+
+
 /* lazy wrapper
 
 
@@ -121,37 +131,50 @@ style="display: inline-block;width: 100%;max-width: 640px" */
 text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  color:#222222;
   /* transition: 0.3s; */
 }
-
 
 /* Hyperlinks */
 
 a {
-  color:black;
+  /* color:black; */
+  color:#222222;
   text-decoration: none;
   transition: 0.3s;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.04em;
 }
 
 a:hover {
   color: turquoise;
 }
 
+a:active {
+  color: grey;
+  
+}
+
+/* 
 .text-div {
   display: block;
 }
-
-
+ */
+.header{
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+    font-size: min(calc(14px + (20 - 14) * ((100vw - 300px) / (700 - 300))),20px);
+    /* font-size: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px) */
+}
 
 .page-title{ font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: min(calc(36px + (51 - 36) * ((100vw - 300px) / (700 - 300))),51px);
-
   line-height: 224.52%;
   /* or 125px */
-    text-align: center;
+  text-align: center;
   letter-spacing: -0.06em;
 padding-top: min(calc(31px + (44 - 31) * ((100vw - 300px) / (700 - 300))),44px);
 padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41px);
@@ -159,20 +182,51 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
 
 .symbol-div{
   padding-bottom:    min(calc(10px + (12 - 10) * ((100vw - 300px) / (700 - 300))),12px);
- 
-  ;}
+   ;}
+
+
+  .page-div
+  {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding:min(calc(5px + (30 - 5) * ((100vw - 300px) / (700 - 300))),30px);
+    background-color: #FDFAFB;
+       }
+
+
+     .menu-container{
+      /* height: 100%;
+      position: relative;
+      height: 100vh; */
+      /* this would center it on x axis */
+      /* justify-content: center; */
+      flex-grow: 1;      
+      display: flex;
+  align-items: center; /* Centers items vertically */
+
+    }
+
   .menu-div{
     font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
-    font-size: min(calc(36px + (51 - 36) * ((100vw - 300px) / (700 - 300))),51px);
-
-    height: 100vh;
-    padding: 10px;
+    font-size: min(calc(24px + (40 - 24) * ((100vw - 300px) / (700 - 300))),40px);
+    /* text-align: center; */
+    
+    /* position: absolute; */
+    /* top: 50%; */
+    left: 20px; /* Adjust the value as needed */
+    /* transform: translateY(-50%); */
+    /* padding: 0px 10px 0px 20px; */
     /* border: 3px dashed #1c87c9; */
-
-    display: table-cell;
-    vertical-align: middle;
+/* height:auto; */
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
+   
 
   }
 .symbol-text{
@@ -204,7 +258,6 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
   .section-title{font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight:300;
-    /* font-size: 21px; */
     text-align: center;
     line-height: 120.02%;
   padding-top: min(calc(35px + (50 - 35) * ((100vw - 300px) / (700 - 300))),50px);
