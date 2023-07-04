@@ -797,30 +797,26 @@
     });
   </script> -->
   <script>
-  function lazyLoad() {
-    const images = document.querySelectorAll("img[data-src]");
-  
-    images.forEach((image) => {
-      if (isInViewport(image)) {
-        image.src = image.dataset.src;
-        image.removeAttribute("data-src");
-      }
-    });
-  }
-  
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-  
-  // Attach the lazyLoad function to the scroll event
-  window.addEventListener("scroll", lazyLoad);
-  
-  window.addEventListener("load", lazyLoad);
+function lazyLoad(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const image = entry.target;
+      image.src = image.dataset.src;
+      image.removeAttribute("data-src");
+      observer.unobserve(image);
+    }
+  });
+}
+
+const observer = new IntersectionObserver(lazyLoad, {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0,
+});
+
+const images = document.querySelectorAll("img[data-src]");
+
+images.forEach((image) => {
+  observer.observe(image);
+});
   </script>
