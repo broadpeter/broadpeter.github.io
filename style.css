@@ -162,9 +162,9 @@ a:active {
 .header{
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.02em;
-    font-size: min(calc(14px + (20 - 14) * ((100vw - 300px) / (700 - 300))),20px);
+    font-size: min(calc(16px + (21 - 16) * ((100vw - 300px) / (700 - 300))),21px);
     /* font-size: min(calc(16px + (24 - 14) * ((100vw - 300px) / (700 - 300))),24px) */
 }
 
