@@ -98,7 +98,10 @@ background-color: #fefefe;
 }
 
 
-
+p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
 
 /* lazy wrapper
 
