@@ -217,6 +217,7 @@ padding-bottom: min(calc(26px + (41 - 26) * ((100vw - 300px) / (700 - 300))),41p
   font-weight: 300;
     font-size: min(calc(24px + (40 - 24) * ((100vw - 300px) / (700 - 300))),40px);
     text-align: center;
+    line-height: 2;
     
     /* position: absolute; */
     /* top: 50%; */
