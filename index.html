@@ -1,102 +1,278 @@
-<!-- 
-  Using tutorial from here
-  https://www.codeguage.com/tutorials/lazy-loading/ -->
-
-
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-
-  <meta charset="utf-8" />
-<!-- Primary Meta Tags -->
-  <title>Peter Broad</title>
-  <meta name="title" content="Peter Broad">
-  <meta name="description" content="My homepage">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://broadpeter.github.io/index.html">
-  <meta property="og:title" content="Peter Broad">
-  <meta property="og:description" content="My homepage">
-  <meta property="og:image" content="exportimages/split-sarajevo-landscape-2-_0007">
-  <link rel="icon" href="bike-icon.png">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://broadpeter.github.io/index.html">
-  <meta property="twitter:title" content="Peter Broad">
-  <meta property="twitter:description" content="My homepage">
-  <meta property="twitter:image" content="exportimages/split-sarajevo-landscape-2-_0007">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-
-
-
-    <!-- /* .div1{
-
-    overflow: scroll;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-} */
-
-
-    /* .image{
-    
-     scroll-snap-align: start;
-} 
-*/
-
-
-
-
-    /*
-For horiztontal scroll
-
-.image{
-    display:inline-block;
-    
-} 
-
-
- .full-wrapper{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: 100vh;
-    white-space:nowrap;
-} */ -->
-  </style>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Peter Broad</title>
+	<link rel="preconnect" href="https://api.fontshare.com" />
+	<link rel="icon" type="image/svg+xml" href="portfolio-images/favicon.svg" />
+	<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" />
+	<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" />
+	<link rel="stylesheet" href="portfolio.css" />
+	<link rel="stylesheet" href="portfolio-dark.css" />
 </head>
-
 <body>
-  <div class="page-div" >
-  <div class="header">Photos</div>
-  <div class="menu-container">
-<div class="menu-div">
-<!-- <p>Photos</p> -->
-  <!-- <div class="full-wrapper" style="display: table; height: 100vh; overflow: hidden;"> -->
-    <!-- <div class= style="display: table-cell; vertical-align: middle;"> -->
-<br>
-<a href="/split-sarajevo.html">Split to Sarajevo</a>   
+	<div class="dark-toggle" aria-label="Toggle dark mode" style="display: none">
+		<span>Dark</span>
+		<button id="dark-toggle-btn" role="switch" aria-checked="false" aria-label="Dark mode"></button>
+	</div>
+	<main id="page-main" class="page-main">
+		<h1 id="page-title" class="page-title">Peter Broad</h1>
 
-<br>
+		<div class="intro-columns" aria-label="Page introduction">
+			<p id="page-intro" class="intro page-intro">				Creating charts, dashboards and visual systems that help people understand complex information
 
-<a href="/tirana-pristina.html">Tirana to Pristina</a>
-   
-    <!-- <a href="/split-sarajevo.html">Other link</a> -->
-<!-- <br>Split to Sarajevo -->
-</div>
-</div>
-      <!-- </div> -->
+
+			</p>
+
+			<div class="intro-body-group">
+				<p id="page-body-text" class="body-text page-body-text">
+					
+I design and build engaging data graphics that are faithful to the data they represent. Drawing on a background in policy research, I find the best way to communicate the questions behind the data.
+
+
+				</p>
+				<p id="page-body-text-2" class="body-text page-body-text">
+I like to build visual systems that help teams communicate consistently across products, not just individual charts. I pay attention to the small design details that give people the confidence to navigate the data.
+				</p>
+			</div>
+		</div>
+
+		<hr id="divider-1" class="divider divider-1" />
+
+		<section id="images-section" class="content-section images-section" aria-labelledby="images-subheading">
+			<h2 id="images-subheading" class="section-subheading">Work</h2>
+
+			<div id="image-caption-pair-1" class="image-caption-pair content-item">
+				<div class="image-frame">
+				<img
+					id="test-image-1"
+					class="placeholder test-image"
+					src="portfolio-images/frame-14b.png"
+					alt="Preview of the Real Time Indicators Dashboard project"
+				/>
+				</div>
+				<div class="image-meta">
+					<p id="caption-1" class="caption image-caption">
+						<span class="caption-text">Real Time Indicators Dashboard</span>
+					</p>
+					<p id="image-description-1" class="blog-description">A public dashboard making a complex range of rapidly changing economic and social indicators easy to interpret. The design replaced the need for a weekly bulletin freeing up analyst time.</p>
+					<a href="https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/economicactivityandsocialchangerealtimeindicatorsukdashboard/2026-03-05" target="_blank" rel="noopener noreferrer" class="image-link">
+						<span>Visit site </span>
+						<span class="caption-arrow" aria-hidden="true">
+							<svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 8H13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+								<path d="M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+
+			<div id="image-caption-pair-2" class="image-caption-pair content-item">
+				<div class="image-frame">
+				<img
+					id="test-image-2"
+					class="placeholder test-image"
+					src="portfolio-images/image-project-2.jpg"
+					alt="Preview of the ONS Chart Styles project"
+				/>
+				</div>
+				<div class="image-meta">
+					<p id="caption-2" class="caption image-caption">
+						<span class="caption-text">ONS Chart Styles</span>
+					</p>
+					<p id="image-description-2" class="blog-description">A reusable visual language for ONS statistical charts, defining consistent and clear chart styles and design patterns across products. These are replacing inconsistent outputs across the organisation</p>
+				</div>
+
+			</div>
+
+			<div id="image-caption-pair-3" class="image-caption-pair content-item">
+				<div class="image-frame">
+				<img
+					id="test-image-3"
+					class="placeholder test-image"
+					src="portfolio-images/image-project-3.jpg"
+					alt="Preview of the Weekly Deaths Dashboard project"
+				/>
+				</div>
+				<div class="image-meta">
+					<p id="caption-3" class="caption image-caption">
+						<span class="caption-text">
+							Weekly Deaths Dashboard
+						</span>
+					</p>
+					<p id="image-description-3" class="blog-description">A visual overview of weekly mortality data, providing key trends and statistical context without overwhelming users. Has been highlighted as best practice by the UK Statistics Authority.</p>
+					<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/deathsregisteredweeklyinenglandandwales/2025-03-26" target="_blank" rel="noopener noreferrer" class="image-link">
+						<span>Visit site </span>
+						<span class="caption-arrow" aria-hidden="true">
+							<svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 8H13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+								<path d="M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+
+			<div id="image-caption-pair-4" class="image-caption-pair content-item">
+				<div class="image-frame">
+				<img
+					id="test-image-4"
+					class="placeholder test-image"
+					src="portfolio-images/image-project-4c.jpg"
+					alt="Preview of the ONS data visualisation guidance project"
+				/>
+				</div>
+				<div class="image-meta">
+					<p id="caption-4" class="caption image-caption">
+						<span class="caption-text">
+							Data Visualisation Guidance
+						</span>
+					</p>
+					<p id="image-description-4" class="blog-description">The data visualisation section of the ONS Service Manual provides clear guidance for improving statistical graphics, addressing practical issues overlooked by existing resources. It is used as a reference point by teams across ONS and other organisations.</p>
+					<a href="https://service-manual.ons.gov.uk/data-visualisation/" target="_blank" rel="noopener noreferrer" class="image-link">
+						<span>Visit site </span>
+						<span class="caption-arrow" aria-hidden="true">
+							<svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 8H13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+								<path d="M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+
+			<div id="image-caption-pair-5" class="image-caption-pair content-item">
+				<div class="image-frame">
+				<img
+					id="test-image-5"
+					class="placeholder test-image"
+					src="portfolio-images/frame-6.png"
+					alt="Preview of the Editorial infographics at Citizens Advice project"
+				/>
+				</div>
+				<div class="image-meta">
+					<p id="caption-5" class="caption image-caption">
+						<span class="caption-text">
+							Editorial infographics at Citizens Advice
+						</span>
+					</p>
+					<p id="image-description-5" class="blog-description">A variety of charts, diagrams and explanatory graphics to support policy reports, presentations and social media. Established a new visual communication capability within the policy team.</p>
+				</div>
+			</div>
+		</section>
+
+		<hr id="divider-2" class="divider divider-2" />
+
+		<section id="blog-section" class="content-section blog-section" aria-labelledby="blog-subheading">
+			<h2 id="blog-subheading" class="section-subheading">Thoughts</h2>
+
+			<div id="blog-pair-1" class="blog-pair content-item">
+				<p id="blog-heading-1" class="blog-heading">
+					<span class="blog-heading-text">Data visualisation's digital production problem</span>
+				</p>
+				<p id="blog-description-1" class="blog-description">Make Charts Analogue Again? A blog about why digital charts have bad design and why AI may help</p>
+				<a href="https://graphpaper.substack.com/p/data-visualisations-digital-production" target="_blank" rel="noopener noreferrer" class="image-link">
+					<span>Read on Substack</span>
+					<span class="caption-arrow" aria-hidden="true">
+						<svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 8H13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+							<path d="M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</span>
+				</a>
+			</div>
+
+			<div id="blog-pair-2" class="blog-pair content-item" hidden>
+				<p id="blog-heading-2" class="blog-heading">
+					<span class="blog-heading-text">Blog heading 2</span>
+					<span class="caption-arrow blog-heading-arrow" aria-hidden="true">
+						<svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 8H13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+							<path d="M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</span>
+				</p>
+				<p id="blog-description-2" class="blog-description">Blog description 2</p>
+			</div>
+
+			<div id="blog-pair-3" class="blog-pair content-item" hidden>
+				<p id="blog-heading-3" class="blog-heading">
+					<span class="blog-heading-text">Blog heading 3</span>
+					<span class="caption-arrow blog-heading-arrow" aria-hidden="true">
+						<svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 8H13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+							<path d="M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</span>
+				</p>
+				<p id="blog-description-3" class="blog-description">Blog description 3</p>
+			</div>
+		</section>
+
+		<hr id="divider-3" class="divider divider-3" />
+
+
+		<section id="contact-section" class="content-section contact-section" aria-label="Contact information">
+			<div id="contact-columns">
+				<div id="footer-item-1" class="footer-item">
+					<p id="contact-description" class="blog-description">
+						Based in London, I'm a Senior Data Visualisation Specialist at the Office for National Statistics.
+					</p>
+				</div>
+				<div id="footer-item-2" class="footer-item">
+					<p id="contact-description-2" class="blog-description">
+						I work with tools like Figma, Svelte, d3 and AI-assisted workflows
+					</p>
+				</div>
+				<div id="footer-item-3" class="footer-item">
+					<p id="contact-description-3" class="blog-description">
+						I'm interested in visual culture, information design. I take <a href="https://broadpeter.github.io/split-sarajevo.html" target="_blank" rel="noopener noreferrer">photos</a>.
+					</p>
+				</div>
+				<div id="footer-item-4" class="footer-item">
+					<p id="contact-link-1" class="contact-link"><a href="mailto:peter.broad@gmail.com">Email me</a></p>
+				</div>
+			</div>
+			<div id="footer-item-5" class="footer-item">
+				<p class="blog-description">Designed and built by PB · 2026</p>
+			</div>
+		</section>
+
+		
+	</main>
+	<script>
+		const btn = document.getElementById('dark-toggle-btn');
+		const root = document.documentElement;
+		const pageTitle = document.getElementById('page-title');
+		const stored = localStorage.getItem('theme');
+		if (stored === 'dark') { root.setAttribute('data-theme', 'dark'); btn.setAttribute('aria-checked', 'true'); }
+		btn.addEventListener('click', () => {
+			const isDark = root.getAttribute('data-theme') === 'dark';
+			if (isDark) {
+				root.removeAttribute('data-theme');
+				btn.setAttribute('aria-checked', 'false');
+				localStorage.setItem('theme', 'light');
+			} else {
+				root.setAttribute('data-theme', 'dark');
+				btn.setAttribute('aria-checked', 'true');
+				localStorage.setItem('theme', 'dark');
+			}
+		});
+
+		if (pageTitle) {
+			const fadeDistance = 220;
+			const updateTitleOpacity = () => {
+				const scrollY = window.scrollY || window.pageYOffset;
+				const opacity = Math.max(0, 1 - scrollY / fadeDistance);
+				pageTitle.style.opacity = opacity.toFixed(3);
+				pageTitle.style.pointerEvents = opacity < 0.05 ? 'none' : 'auto';
+			};
+
+			window.addEventListener('scroll', updateTitleOpacity, { passive: true });
+			updateTitleOpacity();
+		}
+	</script>
 </body>
-
-
-<!-- adds class based on image dimensions
-   <script>
-  $('.image').each(function () {
-    $(this).addClass(this.width > this.height ? 'image landscape' : 'image portrait');
-  });
-</script> -->
+</html>

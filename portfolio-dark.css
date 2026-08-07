@@ -1,0 +1,13 @@
+[data-theme="dark"] {
+	--text: #e2e2e2;
+	--muted: #e2e2e2;
+	--highlight: #7a9be0;
+	--intro-lead-text: #7a9be0;
+	--intro-supporting-text: #aaaaaa;
+	--grey: #777777;
+	--image-border: #3a3a3a;
+	--bg: #161616;
+	--image-link-bg: #2e2e2e;
+	--toggle-bg: #5377c4;
+	--toggle-knob: #ffffff;
+}
