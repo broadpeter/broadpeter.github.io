@@ -137,7 +137,7 @@ h1 {
 	color: var(--intro-supporting-text);
 }
 
-@media (max-width: 899px) {
+@media (max-width: 799px) {
 	.intro-columns .intro-body-group .body-text + .body-text {
 		margin-top: 16px;
 	}
@@ -149,6 +149,10 @@ hr {
 	margin: 105px 0 30px;
 }
 
+#divider-3 {
+	margin-top: 79px;
+}
+
 section h2 {
 	font-size: 30px;
 	font-weight: 500;
@@ -158,7 +162,7 @@ section h2 {
 
 .image-caption-pair {
 	margin-top: 0;
-	margin-bottom: 65px;
+	margin-bottom: 100px;
 	transition: opacity 0.2s ease;
 }
 
@@ -220,6 +224,11 @@ section h2 {
 	width: 17px;
 	height: 17px;
 	display: block;
+}
+
+.email-arrow {
+	position: relative;
+	top: 4px;
 }
 
 .blog-pair,
@@ -403,7 +412,31 @@ section h2 {
 	color: var(--text);
 }
 
-@media (min-width: 900px) {
+@media (max-width: 799px) {
+	#contact-section .footer-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	#contact-section .footer-item::before {
+		content: '\00B7';
+		color: var(--text);
+		font-size: 1rem;
+		line-height: 1.4;
+		flex-shrink: 0;
+	}
+
+	#contact-section .footer-item > * {
+		margin: 0;
+	}
+
+	#footer-base {
+		margin-top: 14px;
+	}
+}
+
+@media (min-width: 800px) {
 	.intro-columns {
 		display: grid;
 		grid-template-columns: minmax(260px, 45%) minmax(0, 1fr);
@@ -514,6 +547,10 @@ section h2 {
 		margin-top: 2px;
 	}
 
+
+		#footer-base {
+		margin-top: 19px;
+	}
 	#contact-columns .contact-link,
 	#contact-columns #contact-description,
 	#contact-columns #contact-description-2,
